@@ -7,6 +7,7 @@ import "../../contracts/users/UserStorage.sol";
 
 contract TestUserStorage {
   function testCreateFirstUser() public {
+    
     UserStorage _storage = UserStorage(DeployedAddresses.UserStorage());
 
     uint _expectedId = 1;
