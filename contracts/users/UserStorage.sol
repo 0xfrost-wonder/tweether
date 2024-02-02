@@ -3,7 +3,7 @@ pragma solidity ^0.8.10;
 
 contract UserStorage {
 
-    mapping (uint => Profile) profiles;
+    mapping (uint => Profile) public profiles;
 
     
     struct Profile {
@@ -21,4 +21,6 @@ contract UserStorage {
         
         return lastUserId;
     }
+    
+
 }
